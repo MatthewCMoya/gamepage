@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/img/bg.png");
+  text: white;
+}
+.image-cropper {
+  max-width: 350px;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.myButton {
+  -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf));
+  background: -moz-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+  background: -webkit-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+  background: -o-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+  background: -ms-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+  background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf',GradientType=0);
+  background-color: #ededed;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: block;
+  cursor: pointer;
+  color: #777777;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+
+.myButton:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed));
+  background: -moz-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+  background: -webkit-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+  background: -o-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+  background: -ms-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+  background: linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed',GradientType=0);
+  background-color: #dfdfdf;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+#modal {
+  margin: 50px auto 0;
+  padding: 10px;
+  width: 750px;
+  height: 400px;
+  opacity: 1;
+}
+
+#modal.hide {
+  margin: -100px 0 0 0;
+  opacity: 0;
+  width: 0px;
+}
+
+#modal.expanded {
+  width: 900px;
+}
+
+#modal.expanded #menu {
+  height: 1000px;
+}
+
+#modal #welcome {
+  position: relative;
+}
+
+#modal #welcome #gravitar {
+  z-index: 3;
+  margin: 0 auto -50px;
+}
+
+#modal #welcome #gravitar img {
+  border: 5px solid #000;
+}
+
+#modal #welcome .bubble {
+  position: absolute;
+  z-index: 5;
+  top: -10px;
+  left: -90px;
+  border: 1px solid #ddd;
+  background-color: #000;
+  color: #fff;
+  font-size: 3em;
+  text-align: center;
+  border-radius: 20px;
+  border-bottom-right-radius: 0;
+  padding: 20px;
+}
+
+#modal #menu {
+  border-radius: 20px;
+  padding: 50px 30px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  -webkit-box-shadow: 0px 23px 45px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 23px 45px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 23px 45px 0px rgba(0, 0, 0, 0.75);
+  background-image: url(http://localhost:8000/congruent_outline.png);
+}
+
+#modal #menu figure {
+  border-radius: 20px;
+  height: 100px;
+  position: relative;
+  margin: 2% 0;
+  flex: 0 0 48%;
+}
+
+#modal #menu figure figcaption {
+  font-size: 2em;
+  line-height: 2.5em;
+  text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+  figure {
+    flex: 0 0 100%;
+    margin-bottom: 7%;
+  }
+}
