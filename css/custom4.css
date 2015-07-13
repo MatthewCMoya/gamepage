@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box
+}
+
+body {
+  background-image: url("/img/bg.png");
+}
+
+#kingscup {
+  height: 600px;
+  width: 100%;
+  border: 5px solid black;
+  padding: 20px;
+}
+
+.deck, .card {
+  width: 220px;
+  height: 304px;
+  /*border: 1px solid black;
+  border-radius: 10px;*/
+  margin-right: 20px;
+  float: left;
+}
+
+.deck {
+  background-image: url("/img/cardback.jpg");
+  background-size: 440px;
+  background-position-y: -3px;
+}
+
+.card {
+  background: url("/img/cards.jpg") no-repeat;
+  background-size: 2861px;
+  background-position-y: 0px;
+  border-radius: 15px;
+  height: 308px;
+}
+
+.deck:hover {
+  cursor: pointer;
+}
+
+.display {
+  height: 100%;
+  width: 50%;
+  float: right;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 60px;
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+
+}
+
