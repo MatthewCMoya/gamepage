@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: url("/img/bg.png");
+  background-image: url("http://www.vanseodesign.com/blog/wp-content/uploads/2011/10/background-3.jpg");
   text: white;
 }
 .image-cropper {
@@ -11,6 +11,13 @@ body {
   height: auto;
   position: relative;
   overflow: hidden;
+}
+
+h3 {
+  color: white;
+  font-family: Impact;
+  margin: 0 auto;
+  padding-top: 30px;
 }
 
 img {

@@ -3,7 +3,11 @@
 }
 
 body {
-  background-image: url("/img/bg.png");
+  background-image: url("http://www.vanseodesign.com/blog/wp-content/uploads/2011/10/background-3.jpg");
+}
+
+.hidden {
+  display:none;
 }
 
 #kingscup {
@@ -16,8 +20,8 @@ body {
 .deck, .card {
   width: 220px;
   height: 304px;
-  /*border: 1px solid black;
-  border-radius: 10px;*/
+  /*border: 1px solid black;*/
+  border-radius: 10px;
   margin-right: 20px;
   float: left;
 }
@@ -41,6 +45,7 @@ body {
 }
 
 .display {
+  color: white;
   height: 100%;
   width: 50%;
   float: right;
@@ -50,6 +55,24 @@ body {
   top: 50%;
   position: relative;
   transform: translateY(-50%);
+
+}
+.display.game-over .message{
+  display: block;
+}
+
+h1 {
+  color: white;
+  padding-top: 20px;
+}
+
+.message {
+  display:none;
+  position:absolute;
+  top:50%;
+  left:0;
+  width:100%;
+  line-height: 0px;
 
 }
 
